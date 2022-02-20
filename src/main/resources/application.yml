@@ -1,0 +1,32 @@
+logging:
+  level:
+    root: info
+    com:
+      example: debug
+
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /swagger
+    use-root-path: true
+    disable-swagger-default-url: true
+    try-it-out-enabled: true
+
+com:
+  example:
+    jwt:
+      issuer: example
+      secret: zdtlD3JK56m6wTTgsNFhqzjqP
+      expire-days: 1
