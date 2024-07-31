@@ -1,2 +1,2 @@
-# sprinng-boot-security-jwt
+# spring-boot-security-jwt
 Sample project for user CRUD operation.  
